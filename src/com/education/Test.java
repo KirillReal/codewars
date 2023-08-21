@@ -6,7 +6,7 @@ public class Test {
         removeDuplicates(arr);
     }
 
-    public static void removeDuplicates(int a[])
+    public static void removeDuplicates(int[] a)
     {
         int j = 0;
         for (int i = 1; i < a.length; i++) {
