@@ -1,4 +1,4 @@
-package com.education;
+package com.codewars;
 
 import java.util.Arrays;
 
