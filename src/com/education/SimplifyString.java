@@ -2,7 +2,7 @@ package com.education;
 
 import java.util.Stack;
 
-public class Test2 {
+public class SimplifyString {
 
     //Need to simplify string path
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Test2 {
 
     private static String normalize(String input) {
         // Stack to store the file's names.
-        Stack<String> st = new Stack<String>();
+        Stack<String> st = new Stack<>();
 
         // temporary String which stores the extracted
         // directory name or commands("." / "..")
@@ -34,9 +34,9 @@ public class Test2 {
         res.append("/");
 
         // stores length of input String.
-        int len_A = input.length();
+        int lenA = input.length();
 
-        for (int i = 0; i < len_A; i++)
+        for (int i = 0; i < lenA; i++)
         {
 
             // we will clear the temporary String
@@ -46,12 +46,12 @@ public class Test2 {
             StringBuilder dir = new StringBuilder();
 
             // skip all the multiple '/' Eg. "/////""
-            while (i < len_A && input.charAt(i) == '/')
+            while (i < lenA && input.charAt(i) == '/')
                 i++;
 
             // stores directory's name("a", "b" etc.)
             // or commands("."/"..") into dir
-            while (i < len_A && input.charAt(i) != '/')
+            while (i < lenA && input.charAt(i) != '/')
             {
                 dir.append(input.charAt(i));
                 i++;
