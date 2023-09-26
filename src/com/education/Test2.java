@@ -1,11 +1,10 @@
 package com.education;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Stack;
 
 public class Test2 {
+
+    //Need to simplify string path
     public static void main(String[] args) {
         String input1 = "/var/./lib/../test";
         String input2 = "/var/lib/../../test";
