@@ -40,8 +40,7 @@ public class FindDuplicateInTwoArrays {
         // [4, 4, 9, 2, 2, 9]
         //
         List<Integer> resList = new ArrayList<>(IntStream.of(a).boxed().toList());
-        List<Integer> integerList = IntStream.of(b).boxed().toList();
-        resList.addAll(integerList);
+        resList.addAll(IntStream.of(b).boxed().toList());
         List<Integer> result = resList.stream().filter(i -> Collections.frequency(resList, i) > 1).toList();
         int[] res = result.stream().mapToInt(i -> i).toArray();
         return res;
